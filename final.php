@@ -67,12 +67,12 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO `answers` (`Name`, `Ans1`, `Ans2`) VALUES ('".$_SESSION['Name']."', '".$_SESSION['Ans1']."', '".$ans2."')";
+$sql = "INSERT INTO `answers` (`Name`, `Ans1`, `Ans2`) VALUES ('".$_SESSION['Name']."', '".$_SESSION['Ans1']."', '".$ans2."')"; //creating querry
 if ($conn->query($sql) === TRUE) {
   #echo "New record created successfully";
 	echo "";
 } #else {
  # echo "Error: " . $sql . "<br>" . $conn->error;
 #}
-session_destroy();
+session_destroy();   //destroying session and deleting all the session variable
 ?>
