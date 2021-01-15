@@ -26,7 +26,7 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
 </head>
 <body>
 <?php
-echo '<H3 align = "right">Hello '.$_SESSION['Name']."</H3>";
+echo '<H3 align = "right">Hello '.$_SESSION['Name']."</H3>";  //printing name oof user passed before
 ?>
 <div>
 <form action="pg2.php" method = "post" >
